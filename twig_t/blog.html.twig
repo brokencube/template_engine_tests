@@ -1,0 +1,9 @@
+<table>
+{% for blog in data %}
+    <tr>
+        <td>{{ blog.title }}</td>
+        <td>{{ blog.description }}</td>
+        <td>{{ blog.date_created|date('Y-m-d') }}</td>
+    </tr>
+{% endfor %}
+</table>
